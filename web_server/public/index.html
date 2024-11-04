@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/static/main.js"></script>
+    <title>Sample Home</title>
+</head>
+<body>
+    <main>
+        <h1>Hello Stripes!</h1>
+        <h3>Below is an example of passing a variable from your server to the browser.  The text below is defined on line 43 of <code>server.py</code></h3>
+        <h4>{{ example_variable }}</h4>
+        <hr>
+        <h4>Example Form</h4>
+        <form action="/checkout" method="POST">
+            <p>This form has two buttons.  The blue one uses JavaScript to respond to the user. </p>
+            <p> The red one makes a POST request to the server that creates both a Payment Intent and a Checkout Session.  The server then returns the client secret for the Payment Intent and both the ID and URL for the Checkout Session</p>
+            <input id="button" type="button" value="JavaScript" style="background-color: blue; color: white">
+            <input type="submit" value="POST" style="background-color: red; color: white;">
+        </form>
+    </main>
+</body>
+
+<script>
+    init();
+</script>
+</html>
