@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+.App-navbar {
+  float: left;
+  min-width: 19%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FBFBFB;
+  border-right: 1px solid #E5E5E5;
+}
+
+.navbar-item {
+  display: block;
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+.App-contents {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 95vh;
+  max-width: 80%;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0%;
+  }
+  to {
+      opacity: 100%;
+  }
+}
+
+.fade-in {
+  animation: fadeIn .25s ease-in-out;
+}
+
+.code-block {
+  background-color: #F5F5F5;
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid #E5E5E5;
+  padding: 10px;
+  overflow: hidden;
+}
+
+table {
+  text-align: left;
+  padding: 5px;
+  background-color: #FBFBFB;
+  border-radius: 5px;
+  border: 1px solid #E5E5E5;
+}
+
+th {
+  padding: 2px 5px;
+  font-size: 14px
+}
+
+td {
+  padding: 2px 5px;
+  font-size: 12px;
+}
